@@ -31,16 +31,16 @@ This task aims to create a simple web-based Video Analytics System (VAS) to anal
 This section illustrates the website's layout and its functions
 
 - **Home page:**
-![UI](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/0b4fc354-4c49-4cb2-b25e-7bbf3f31d58f)
+![UI](/Media/UI.png)
 
 - **Upload page:**
-![UI1](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/0a68fcab-2caa-43f9-a19f-5cc35b4c1063)
+![UI1](/Media/UI1.png)
 
 ### ii. Example outputs
 This section overviews the results of the provided example which can be found in the `Examples` folder. You can find the full video ouputs via [this link](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Er_pwTn7ha5DvdpITQX-KUQBy9RaG0wLr13y-c38OwjpiA?e=R2J9ob).
 
 #### a. Example Video
-![example1](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/1cdb0308-a6c8-4046-b325-2f5d14834898)
+![example1](/Media/example1.gif)
 
 #### b. Example URL 1
-![example2](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/2c72a61a-da82-48d0-b917-20dc4af1dfe7)
+![example2](/Media/example2.gif)
