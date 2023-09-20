@@ -8,6 +8,10 @@
    a. [UI](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#aui)
    
    b. [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#bexample-results)
+
+      i. [Example Video](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#b1-example-video)
+   
+      ii. [Example URL 1](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#b1-example-url-1)
    
 ## 1.Introduction
 This task aims to create a simple web-based Video Analytics System (VAS) to analyze content from videos with the following inputs and outputs.
