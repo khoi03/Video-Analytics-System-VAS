@@ -1,0 +1,64 @@
+.video-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.centered-video {
+  max-width: 100%;
+  height: auto;
+}
+
+.dashed-border {
+  border: 2px dashed black; 
+  padding: 20px; 
+}
+
+.dashed-border {
+  border-radius: 10px;
+}
+
+.dashed-border + .dashed-border {
+  margin-top: 20px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+.container1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+}
+
+h2 {
+    color: black;
+}
+
+.custom-color {
+  color: black; 
+}
+
+.blue-section {
+    flex: 2;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.white-section {
+    flex: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    height: 100%;
+}

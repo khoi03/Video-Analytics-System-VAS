@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container1">
+    <div id="blue-section" class="blue-section">
+        <div class="dashed-border">
+            {% if video_filename %}
+                <h2>Uploaded Video:</h2>
+                <div class="video-container"> 
+                    <video id="uploaded-video" class="centered-video" width="640" height="360" controls>
+                        <source src="{{ url_for('static', filename='uploads/UploadedVideo.mp4') }}?{{ cache_buster }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <a href="/" class="btn btn-outline-primary">Analyze another video</a>
+                </div>
+            {% else %}
+                <form id="url-form" method="POST" enctype="multipart/form-data" action="/upload">
+                    <h2 >Select size of Yolov8 model</h2>
+                    <select class="form-select" aria-label="Default select example" name="model_size">
+                        <option value="yolov8n.pt">yolov8n.pt</option>
+                        <option value="yolov8s.pt">yolov8s.pt</option>
+                        <option value="yolov8m.pt">yolov8m.pt</option>
+                        <option value="yolov8l.pt">yolov8l.pt</option>
+                        <option value="yolov8x.pt">yolov8x.pt</option>
+                    </select>   
+                    <h3 class="custom-color">And</h3>
+                    <h2 >Enter your URL</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="video_url" placeholder="URL" aria-label="URL" aria-describedby="basic-addon1">
+                        <button class="btn btn-outline-secondary" type="button" id="enter-button">Enter</button>
+                    </div>
+                </form>
+                <h3 class="custom-color">Or</h3>
+                <h2 >Upload a Video</h2>
+                <form method="POST" enctype="multipart/form-data" action="/upload">
+                    <input type="file" name="video" accept="video/*">
+                    <button type="submit" id="upload-button">Upload Video</button>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+    <div class="white-section" id="white-section">
+        <div class="dashed-border">
+            <div id="spinner" class="spinner fade-in d-none">
+                <h2>Analyzing</h2>
+                <div class="spinner-border" role="status"></div>
+            </div>
+            <div id="video-wrapper">
+                {% if video_filename %}
+                    <h2>Analyzed Video:</h2>
+                    <div class="video-container"> 
+                        <video id="uploaded-video" class="centered-video" width="640" height="360" controls>
+                            <source src="{{ url_for('static', filename='annotatedVideo/output.mp4') }}?{{ cache_buster }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('enter-button').addEventListener('click', function () {
+        document.getElementById('url-form').submit();
+        document.getElementById('spinner').classList.remove('d-none');
+    });
+
+    document.getElementById('upload-button').addEventListener('click', function () {
+        document.getElementById('spinner').classList.remove('d-none');
+    });
+
+    document.getElementById('uploaded-video').addEventListener('loadeddata', function () {
+        document.getElementById('spinner').classList.add('d-none');
+    });
+</script>
+
+{% endblock %}
