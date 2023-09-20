@@ -23,7 +23,7 @@ This task aims to create a simple web-based Video Analytics System (VAS) to anal
    - Counting people and other objects in each frame and presenting the results synchronized while playing the video;
    - Illustrating a canvas that exhibits detected objects (bounding box and object name) in each frame, synchronized with the video.
 
-**Notably,** a larger Yolov8 model exhibits more accurate predictions but execute longer. Thus, I recommend using the nano Yolov8 model(yolov8n.pt) or the small Yolov8 model(yolov8s.pt) to enhance the execution time.
+**Notably,** all results in the [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiexample-results) section were obtained using the nano Yolov8 model(yolov8n.pt). Furthermore, if you have a strong GPU, you may consider using a larger Yolov8 model, which provides more accurate predictions but takes longer to process.
 
 ## 2.Overview
 
@@ -37,7 +37,7 @@ This section illustrates the website's layout and its functions
 ![UI1](/Media/UI1.png)
 
 ### ii. Example outputs
-This section overviews the results of the provided example which can be found in the `Examples` folder. You can find the full video ouputs via [this link](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Er_pwTn7ha5DvdpITQX-KUQBy9RaG0wLr13y-c38OwjpiA?e=R2J9ob).
+This section provides an overview of the results from the provided examples located in the `Examples` folder. You can access the complete video outputs via [this link](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Er_pwTn7ha5DvdpITQX-KUQBy9RaG0wLr13y-c38OwjpiA?e=R2J9ob).
 
 #### a. Example Video
 ![example1](/Media/example1.gif)
