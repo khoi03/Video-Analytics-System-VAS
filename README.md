@@ -14,7 +14,7 @@
       2. [Example URL 1](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#b-example-url-1)
    
 ## 1.Introduction
-This task aims to create a simple web-based Video Analytics System (VAS) to analyze content from videos with the following inputs and outputs.
+This task aims to create a simple web-based Video Analytics System (VAS) to analyze content from videos with the following inputs and outputs:
 - **Input:**
    - Any YouTube video URL
    - Upload a video from a local computer
