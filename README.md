@@ -23,7 +23,7 @@ This task aims to create a simple web-based Video Analytics System (VAS) to anal
    - Counting people and other objects in each frame and presenting the results synchronized while playing the video;
    - Illustrating a canvas that exhibits detected objects (bounding box and object name) in each frame, synchronized with the video.
 
-**Notably,** you can switch to a larger Yolov8 model to achieve more accurate predictions by modifying `model_name` in `app.py`. However, I recommend using the nano Yolov8 model(yolov8n.pt) to enhance the execution time.
+**Notably,** a larger Yolov8 model exhibits more accurate predictions but execute longer. Thus, I recommend using the nano Yolov8 model(yolov8n.pt) or the small Yolov8 model(yolov8s.pt) to enhance the execution time.
 
 ## 2.Overview
 
