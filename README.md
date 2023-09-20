@@ -31,7 +31,7 @@ This task aims to create a simple web-based Video Analytics System (VAS) to anal
 This section illustrates the website's layout and its functions
 
 - **Home page:**
-![UI](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/81dc3226-477e-49cd-9d2c-bb626321dc20)
+![UI](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/0b4fc354-4c49-4cb2-b25e-7bbf3f31d58f)
 
 - **Upload page:**
 ![UI1](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/0a68fcab-2caa-43f9-a19f-5cc35b4c1063)
