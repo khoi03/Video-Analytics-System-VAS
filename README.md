@@ -9,7 +9,7 @@
 
    1. [UI](https://github.com/khoi03/Video-Analytics-System-VAS#i-ui)
 
-   2. [Example results](https://github.com/khoi03/Video-Analytics-System-VAS#ii-example-outputs)
+   2. [Example results](https://github.com/khoi03/Video-Analytics-System-VAS#ii-example-results)
    
       1. [Example Video](https://github.com/khoi03/Video-Analytics-System-VAS#a-example-video)
          
