@@ -4,8 +4,10 @@
 1. [Introduction](https://github.com/khoi03/Video-Analytics-System-VAS#1introduction)
 
 2. [Approach](https://github.com/khoi03/Video-Analytics-System-VAS#2approach)
-   
-3. [Overview](https://github.com/khoi03/Video-Analytics-System-VAS#3overview)
+
+3. [To run VAS](https://github.com/khoi03/Video-Analytics-System-VAS#3torunvas)
+
+4. [Overview](https://github.com/khoi03/Video-Analytics-System-VAS#4overview)
 
    1. [UI](https://github.com/khoi03/Video-Analytics-System-VAS#i-ui)
 
@@ -29,7 +31,22 @@ This task aims to create a simple web-based Video Analytics System (VAS) to anal
 In this task, I utilize `Flask`, a Python framework, to develop a basic website, while employing `YOLOv8` model for content analysis in videos.
 **Notably,** all results in the [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiexample-results) section were obtained using the nano YOLOv8 model(yolov8n.pt). Furthermore, if you have a strong GPU, you may consider using a larger YOLOv8 model, which provides more accurate predictions but takes longer to process.
 
-## 3.Overview
+## 3. To run VAS
+I recommend creating an anaconda environment:
+```
+conda create --name vas python=3.9
+```
+
+Then, install Python requirements:
+```
+pip install -r requirements.txt
+```
+Finally, from the `vas` project root, run:
+```
+python app.py
+```
+
+## 4.Overview
 
 ### i. UI
 This section illustrates the website's layout and its functions
