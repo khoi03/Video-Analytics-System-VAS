@@ -6,8 +6,10 @@
 2. [Overview](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#2overview)
 
    1. [UI](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iui)
+
+   2. [Approach](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiapproach)
    
-   2. [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiexample-results)
+   3. [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiiexample-results)
    
       1. [Example Video](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#a-example-video)
          
@@ -23,9 +25,11 @@ This task aims to create a simple web-based Video Analytics System (VAS) to anal
    - Counting people and other objects in each frame and presenting the results synchronized while playing the video;
    - Illustrating a canvas that exhibits detected objects (bounding box and object name) in each frame, synchronized with the video.
 
-**Notably,** all results in the [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiexample-results) section were obtained using the nano Yolov8 model(yolov8n.pt). Furthermore, if you have a strong GPU, you may consider using a larger Yolov8 model, which provides more accurate predictions but takes longer to process.
+## 2.Approach
+In this task, I utilize `Flask`, a Python framework, to develop a basic website, while employing `YOLOv8` model for content analysis in videos.
+**Notably,** all results in the [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiexample-results) section were obtained using the nano YOLOv8 model(yolov8n.pt). Furthermore, if you have a strong GPU, you may consider using a larger YOLOv8 model, which provides more accurate predictions but takes longer to process.
 
-## 2.Overview
+## 3.Overview
 
 ### i. UI
 This section illustrates the website's layout and its functions
