@@ -5,7 +5,7 @@
 
 2. [Approach](https://github.com/khoi03/Video-Analytics-System-VAS#2approach)
 
-3. [To run VAS](https://github.com/khoi03/Video-Analytics-System-VAS#3torunvas)
+3. [To run VAS](https://github.com/khoi03/Video-Analytics-System-VAS#3-to-run-vas)
 
 4. [Overview](https://github.com/khoi03/Video-Analytics-System-VAS#4overview)
 
