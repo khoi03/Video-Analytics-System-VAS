@@ -29,7 +29,7 @@ This task aims to create a simple web-based Video Analytics System (VAS) to anal
 In this task, I utilize `Flask`, a Python framework, to develop a basic website, while employing `YOLOv8` model for content analysis in videos.
 **Notably,** all results in the [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiexample-results) section were obtained using the nano YOLOv8 model(yolov8n.pt). Furthermore, if you have a strong GPU, you may consider using a larger YOLOv8 model, which provides more accurate predictions but takes longer to process.
 
-## 2.Overview
+## 3.Overview
 
 ### i. UI
 This section illustrates the website's layout and its functions
