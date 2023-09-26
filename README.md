@@ -1,17 +1,21 @@
 # Video Analytics System(VAS)
 
 ## Table of contents:
-1. [Introduction](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#1introduction)
+1. [Introduction](https://github.com/khoi03/Video-Analytics-System-VAS#1introduction)
 
-2. [Overview](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#2overview)
+2. [Approach](https://github.com/khoi03/Video-Analytics-System-VAS#2approach)
 
-   1. [UI](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iui)
+3. [To run VAS](https://github.com/khoi03/Video-Analytics-System-VAS#3-to-run-vas)
+
+4. [Overview](https://github.com/khoi03/Video-Analytics-System-VAS#4overview)
+
+   1. [UI](https://github.com/khoi03/Video-Analytics-System-VAS#i-ui)
+
+   2. [Example results](https://github.com/khoi03/Video-Analytics-System-VAS#ii-example-results)
    
-   2. [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiexample-results)
-   
-      1. [Example Video](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#a-example-video)
+      1. [Example Video](https://github.com/khoi03/Video-Analytics-System-VAS#a-example-video)
          
-      2. [Example URL 1](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#b-example-url-1)
+      2. [Example URL 1](https://github.com/khoi03/Video-Analytics-System-VAS#b-example-url-1)
    
 ## 1.Introduction
 This task aims to create a simple web-based Video Analytics System (VAS) to analyze content from videos with the following inputs and outputs:
@@ -23,24 +27,41 @@ This task aims to create a simple web-based Video Analytics System (VAS) to anal
    - Counting people and other objects in each frame and presenting the results synchronized while playing the video;
    - Illustrating a canvas that exhibits detected objects (bounding box and object name) in each frame, synchronized with the video.
 
-**Notably,** a larger Yolov8 model exhibits more accurate predictions but execute longer. Thus, I recommend using the nano Yolov8 model(yolov8n.pt) or the small Yolov8 model(yolov8s.pt) to enhance the execution time.
+## 2.Approach
+In this task, I utilize `Flask`, a Python framework, to develop a basic website, while employing `YOLOv8` model for content analysis in videos.
+**Notably,** all results in the [Example results](https://github.com/khoi03/Video-Analytics-System-VAS/blob/master/README.md#iiexample-results) section were obtained using the nano YOLOv8 model(yolov8n.pt). Furthermore, if you have a strong GPU, you may consider using a larger YOLOv8 model, which provides more accurate predictions but takes longer to process.
 
-## 2.Overview
+## 3. To run VAS
+I recommend creating an anaconda environment:
+```
+conda create --name vas python=3.9
+```
+
+Then, install Python requirements:
+```
+pip install -r requirements.txt
+```
+Finally, from the `vas` project root, run:
+```
+python app.py
+```
+
+## 4.Overview
 
 ### i. UI
 This section illustrates the website's layout and its functions
 
 - **Home page:**
-![UI](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/0b4fc354-4c49-4cb2-b25e-7bbf3f31d58f)
+![UI](/Media/UI.png)
 
 - **Upload page:**
-![UI1](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/0a68fcab-2caa-43f9-a19f-5cc35b4c1063)
+![UI1](/Media/UI1.png)
 
-### ii. Example outputs
-This section overviews the results of the provided example which can be found in the `Examples` folder. You can find the full video ouputs via [this link](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Er_pwTn7ha5DvdpITQX-KUQBy9RaG0wLr13y-c38OwjpiA?e=R2J9ob).
+### ii. Example results
+This section provides an overview of the results from the provided examples located in the `Examples` folder. You can access the complete video outputs via [this link](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Er_pwTn7ha5DvdpITQX-KUQBy9RaG0wLr13y-c38OwjpiA?e=R2J9ob).
 
 #### a. Example Video
-![example1](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/1cdb0308-a6c8-4046-b325-2f5d14834898)
+![example1](/Media/example1.gif)
 
 #### b. Example URL 1
-![example2](https://github.com/khoi03/Video-Analytics-System-VAS/assets/80579165/2c72a61a-da82-48d0-b917-20dc4af1dfe7)
+![example2](/Media/example2.gif)
