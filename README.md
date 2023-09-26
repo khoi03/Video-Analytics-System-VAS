@@ -65,3 +65,12 @@ This section provides an overview of the results from the provided examples loca
 
 #### b. Example URL 1
 ![example2](/Media/example2.gif)
+
+#### c. Example URL 2
+![example3](/Media/example3.gif)
+
+#### d. Example URL 3
+![example4](/Media/example4.gif)
+
+#### e. Example URL 4
+![example5](/Media/example5.gif)
