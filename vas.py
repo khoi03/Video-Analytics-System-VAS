@@ -83,12 +83,14 @@ class VAS:
             annotated_frame = results[0].plot()
             
             count_annotated_frame = self.plot_boxes(results,annotated_frame)
-            
-            output.write(count_annotated_frame)
+            cv.imshow('YOLO V8 Detection', count_annotated_frame)
+            if cv.waitKey(1) & 0xFF == ord(' '):
+                break
+            # output.write(count_annotated_frame)
         
         output.release()
         cap.release()
         cv.destroyAllWindows()
         
-# analyzed_video = VAS('yolov8m.pt', 'static/uploads/test.mp4')
+# analyzed_video = VAS('yolov8n.pt', 'Examples/ExampleVideo.mp4')
 # analyzed_video()
