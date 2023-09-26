@@ -1,6 +1,6 @@
 # Video Analytics System(VAS)
 
-## 1.Introduction
+## Introduction
 This task aims to create a simple web-based Video Analytics System (VAS) to analyze content from videos with the following inputs and outputs:
 - **Input:**
    - Any YouTube video URL
