@@ -25,7 +25,7 @@ class VAS:
         return model
     
     def predict(self, frame):
-        return self.model(frame)
+        return self.model(frame, verbose = False)
     
     def plot_boxes(self, results, annotated_frame):
         for r in results:

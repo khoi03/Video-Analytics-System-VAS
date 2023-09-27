@@ -26,10 +26,8 @@ def upload_video():
     video_name = "UploadedVideo.mp4"
     video_path = os.path.join(app.config["UPLOADED_VIDEOS_DEST"], video_name)
     # Check if the POST request contains a file
-    if 'video' in request.files:
+    if request.files['video'].filename != '':
         video_file = request.files['video']
-        if video_file.filename == '':
-            return "No selected video file."
         
         # Check if the file is an allowed video file type (e.g., mp4)
         allowed_extensions = {'mp4'}
@@ -49,6 +47,7 @@ def upload_video():
         stream.download(app.config["UPLOADED_VIDEOS_DEST"],video_name)
     
     model_name = request.form.get('model_size')
+    
     analyzed_video = VAS(model_name, video_path)
     analyzed_video()
     video_filename = 'static/annotatedVideo/output.mp4'

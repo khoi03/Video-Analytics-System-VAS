@@ -15,28 +15,29 @@
                     <a href="/" class="btn btn-outline-primary">Analyze another video</a>
                 </div>
             {% else %}
-                <form id="url-form" method="POST" enctype="multipart/form-data" action="/upload">
-                    <h2 >Select size of Yolov8 model</h2>
-                    <select class="form-select" aria-label="Default select example" name="model_size">
-                        <option value="yolov8n.pt">yolov8n.pt</option>
-                        <option value="yolov8s.pt">yolov8s.pt</option>
-                        <option value="yolov8m.pt">yolov8m.pt</option>
-                        <option value="yolov8l.pt">yolov8l.pt</option>
-                        <option value="yolov8x.pt">yolov8x.pt</option>
-                    </select>   
-                    <h3 class="custom-color">And</h3>
-                    <h2 >Enter your URL</h2>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="video_url" placeholder="URL" aria-label="URL" aria-describedby="basic-addon1">
-                        <button class="btn btn-outline-secondary" type="button" id="enter-button">Enter</button>
-                    </div>
-                </form>
-                <h3 class="custom-color">Or</h3>
-                <h2 >Upload a Video</h2>
-                <form method="POST" enctype="multipart/form-data" action="/upload">
-                    <input type="file" name="video" accept="video/*">
-                    <button type="submit" id="upload-button">Upload Video</button>
-                </form>
+            <form id="main-form" method="POST" enctype="multipart/form-data" action="/upload">
+                <h2>Select size of Yolov8 model</h2>
+                <select class="form-select" aria-label="Default select example" name="model_size">
+                    <option value="yolov8n.pt">yolov8n.pt</option>
+                    <option value="yolov8s.pt">yolov8s.pt</option>
+                    <option value="yolov8m.pt">yolov8m.pt</option>
+                    <option value="yolov8l.pt">yolov8l.pt</option>
+                    <option value="yolov8x.pt">yolov8x.pt</option>
+                </select>
+            
+                <!-- URL input fields -->
+                <h2>Enter your URL</h2>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="video_url" placeholder="URL" aria-label="URL" aria-describedby="basic-addon1">
+                    <button class="btn btn-outline-secondary" type="button" id="enter-button">Enter</button>
+                </div>
+            
+                <!-- Upload input fields -->
+                <h2>Upload a Video</h2>
+                <input type="file" name="video" accept="video/*">
+                <button type="submit" id="upload-button">Upload Video</button>
+            </form>
+            
             {% endif %}
         </div>
     </div>
@@ -63,11 +64,12 @@
 
 <script>
     document.getElementById('enter-button').addEventListener('click', function () {
-        document.getElementById('url-form').submit();
+        document.getElementById('main-form').submit();
         document.getElementById('spinner').classList.remove('d-none');
     });
-
+    
     document.getElementById('upload-button').addEventListener('click', function () {
+        document.getElementById('main-form').submit();
         document.getElementById('spinner').classList.remove('d-none');
     });
 
