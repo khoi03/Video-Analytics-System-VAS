@@ -57,7 +57,7 @@ This section illustrates the website's layout and its functions
 ![UI1](/Media/UI1.png)
 
 ### ii. Example results
-This section provides an overview of the results from the provided examples located in the `Examples` folder. Please visit the complete video outputs via [this link](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Er_pwTn7ha5DvdpITQX-KUQBy9RaG0wLr13y-c38OwjpiA?e=R2J9ob).
+This section provides an overview of the results from the provided examples located in the `Examples` folder. Please access the complete video outputs by following [this link](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Er_pwTn7ha5DvdpITQX-KUQBy9RaG0wLr13y-c38OwjpiA?e=R2J9ob).
 
 #### a. Example Video
 ![example1](/Media/example1.gif)
